@@ -1,16 +1,25 @@
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import { Form } from './Form';
+import { FilterContact } from './FilterContact';
+import { ContactsList } from './ContactsList';
+
+import { Layout, Sectionletter, Headerletter } from './Layout.js';
+
+// import css from './Form/Form.module.css';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-     goit-react-hw-06-phonebook
-    </div>
+    <Layout >
+      < Headerletter>Phone book</ Headerletter>
+      <Form />
+      <Sectionletter>Contacts</Sectionletter>
+      <div >
+        <FilterContact />
+        <ContactsList />
+      </div>
+      <ToastContainer />
+    </Layout>
   );
 };
