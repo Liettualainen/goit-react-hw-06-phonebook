@@ -98,4 +98,5 @@ export const FilterStyle = styled.div`
 
 export const FilterStyleinput = styled.input`
   width: 300px;
+          font-size: 20px;
 `;

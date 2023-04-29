@@ -14,7 +14,6 @@ export const FilterContact = () => {
       <label>Find contacts by name</label>
       <FilterStyleinput
         type="text"
-
         onChange={handleFilterContacts}
       ></FilterStyleinput>
     </FilterStyle>
